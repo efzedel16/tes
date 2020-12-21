@@ -27,10 +27,9 @@
     </h1>
 
     <form class="card col-md-6 m-auto p-3">
-        <!--name, username-->
+        <!--name-->
         <div class="justify-content-between row">
-            <!--name-->
-            <div class="col-md-7 mb-3">
+            <div class="col-md-12 mb-3">
                 <div class="form-floating">
                     <input class="form-control"
                            id="name"
@@ -42,58 +41,8 @@
                     </label>
                 </div>
             </div>
-            <!--name-->
-
-            <!--username-->
-            <div class="col-md-5 mb-3">
-                <div class="form-floating">
-                    <input class="form-control"
-                           id="username"
-                           name="username"
-                           placeholder="username"
-                           type="text">
-                    <label for="username"
-                           class="form-label">@username
-                    </label>
-                </div>
-            </div>
-            <!--username-->
         </div>
-        <!--name, username-->
-
-        <!--email, phone-->
-        <div class="justify-content-between row">
-            <!--email-->
-            <div class="col-md-7 mb-3">
-                <div class="form-floating">
-                    <input type="text"
-                           class="form-control"
-                           id="email"
-                           placeholder="email"
-                           name="email">
-                    <label for="email"
-                           class="form-label">Email
-                    </label>
-                </div>
-            </div>
-            <!--email-->
-
-            <!--phone-->
-            <div class="col-md-5 mb-3">
-                <div class="form-floating">
-                    <input type="number"
-                           class="form-control"
-                           id="phone"
-                           placeholder="phone"
-                           name="phone">
-                    <label for="phone"
-                           class="form-label">Nomor Telpon
-                    </label>
-                </div>
-            </div>
-            <!--phone-->
-        </div>
-        <!--email, phone-->
+        <!--name-->
 
         <!--gender-->
         <div class="d-flex justify-content-around">
@@ -269,7 +218,7 @@
             <!--zip code-->
                 <div class="col-md-5 mb-3">
                     <div class="form-floating">
-                        <input type="text"
+                        <input type="number"
                                class="form-control"
                                id="zipCode"
                                placeholder="zipCode"
@@ -317,6 +266,176 @@
         </div>
         <!--province, country-->
         <!--address-->
+
+        <hr class="border border-3 border-dark rounded-pill">
+        <span class="mb-3">Alumni Angkatan Ke?</span>
+
+        <!--gen, impression message-->
+        <div class="d-flex justify-content-around mb-3">
+            <!--one-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="one"
+                       name="gen"
+                       type="radio">
+                <label class="form-check-label"
+                       for="one">1
+                </label>
+            </div>
+            <!--one-->
+
+            <!--two-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="two"
+                       name="gen"
+                       type="radio">
+                <label class="form-check-label"
+                       for="two">2
+                </label>
+            </div>
+            <!--two-->
+
+            <!--three-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="three"
+                       name="gen"
+                       type="radio">
+                <label class="form-check-label"
+                       for="three">3
+                </label>
+            </div>
+            <!--three-->
+
+            <!--four-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="two"
+                       name="four"
+                       type="radio">
+                <label class="form-check-label"
+                       for="four">4
+                </label>
+            </div>
+            <!--four-->
+
+            <!--five-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="five"
+                       name="gen"
+                       type="radio">
+                <label class="form-check-label"
+                       for="five">5
+                </label>
+            </div>
+            <!--five-->
+
+            <!--six-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="six"
+                       name="gen"
+                       type="radio">
+                <label class="form-check-label"
+                       for="six">6
+                </label>
+            </div>
+            <!--six-->
+
+            <!--seven-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="seven"
+                       name="gen"
+                       type="radio">
+                <label class="form-check-label"
+                       for="seven">7
+                </label>
+            </div>
+            <!--seven-->
+
+            <!--eight-->
+            <div class="form-check">
+                <input class="form-check-input"
+                       id="eight"
+                       name="gen"
+                       type="radio">
+                <label class="form-check-label"
+                       for="eight">8
+                </label>
+            </div>
+            <!--eight-->
+        </div>
+        <!--gen-->
+
+        <!--impression message-->
+        <div class="form-floating mb-3">
+            <textarea class="form-control"
+                      id="floatingTextarea"
+                      name="impressionMessage"
+                      placeholder="Kesan Pesan Bersekolah di SDIT Yaa Bunayya"></textarea>
+            <label for="floatingTextarea">
+                Kesan Pesan Bersekolah di SDIT Yaa Bunayya?
+            </label>
+        </div>
+        <!--impression message-->
+        <!--gen, impression message-->
+
+        <hr class="border border-3 border-dark rounded-pill">
+        <span class="mb-3">Registrasi</span>
+
+        <div class="justify-content-between row">
+            <!--username-->
+            <div class="col-md-4 mb-3">
+                <div class="form-floating">
+                    <input class="form-control"
+                           id="username"
+                           name="username"
+                           placeholder="username"
+                           type="text">
+                    <label for="username"
+                           class="form-label">@username
+                    </label>
+                </div>
+            </div>
+            <!--username-->
+
+        <!--email, phone-->
+
+            <!--email-->
+            <div class="col-md-4 mb-3">
+                <div class="form-floating">
+                    <input type="email"
+                           class="form-control"
+                           id="email"
+                           placeholder="email"
+                           name="email">
+                    <label for="email"
+                           class="form-label">Email
+                    </label>
+                </div>
+            </div>
+            <!--email-->
+
+            <!--phone-->
+            <div class="col-md-4 mb-3">
+                <div class="form-floating">
+                    <input type="number"
+                           class="form-control"
+                           id="phone"
+                           placeholder="phone"
+                           name="phone">
+                    <label for="phone"
+                           class="form-label">Nomor Telpon
+                    </label>
+                </div>
+            </div>
+            <!--phone-->
+        </div>
+        <!--email, phone-->
+
     </form>
 
 </body>
