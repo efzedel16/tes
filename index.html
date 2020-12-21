@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Student Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+          crossorigin="anonymous">
+</head>
+<body class="container user-select-none">
+
+    <h1 class="my-5 text-center">
+        <a class="btn btn-primary" href="index.php">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        Input Student Data
+    </h1>
+
+    <form class="col-md-6 m-auto">
+        <!--name, username-->
+        <div class="d-flex justify-content-evenly">
+            <!--name-->
+            <div class="col-6 form-floating">
+                <input class="form-control"
+                       id="name"
+                       name="name"
+                       placeholder="Full Name"
+                       type="text">
+                <label for="name"
+                       class="form-label">Nama Lengkap
+                </label>
+            </div>
+            <!--name-->
+
+            <!--username-->
+            <div class="d-flex">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <div class="form-floating">
+                    <input class="form-control"
+                           id="username"
+                           name="username"
+                           placeholder="@username"
+                           type="text">
+                    <label for="username"
+                           class="form-label">@username
+                    </label>
+                </div>
+            </div>
+            <!--username-->
+        </div>
+        <!--name, username-->
+
+        <!--row-->
+        <div class="d-flex my-3 justify-content-evenly">
+            <!--email-->
+            <div class="col-5 form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       required
+                       placeholder="Full Name"
+                       name="name">
+                <label for="name"
+                       class="form-label">Email
+                </label>
+            </div>
+            <!--email-->
+
+            <!--phone-->
+            <div class="col-5 form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="username"
+                       required
+                       placeholder="Username"
+                       name="name">
+                <label for="name"
+                       class="form-label">Nomor Telpon
+                </label>
+            </div>
+            <!--phone-->
+        </div>
+        <!--row-->
+
+        <!--gender-->
+        <div class="d-flex justify-content-evenly">
+            <!--male-->
+            <div class="form-check">
+                <i class="fas fa-male"></i>
+                <input class="form-check-input"
+                       type="radio"
+                       name="male"
+                       id="male">
+                <label class="form-check-label"
+                       for="male">
+                    Laki-Laki
+                </label>
+            </div>
+            <!--male-->
+
+            <!--female-->
+            <div class="form-check">
+                <i class="fas fa-female"></i>
+                <input class="form-check-input"
+                       type="radio"
+                       name="female"
+                       id="female">
+                <label class="form-check-label"
+                       for="female">
+                    Perempuan
+                </label>
+            </div>
+            <!--female-->
+        </div>
+        <!--gender-->
+
+        <hr class="border border-3 rounded-pill">
+        <span>Ulang Tahun</span>
+
+        <!--birth-->
+        <div class="d-flex my-3 justify-content-evenly">
+            <!--place-->
+            <div class="col-5 form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="place"
+                       required
+                       placeholder="Place of Birth"
+                       name="place">
+                <label for="place"
+                       class="form-label">Tempat
+                </label>
+            </div>
+            <!--place-->
+
+            <!--date-->
+            <div class="col-5 form-floating">
+                <input type="date"
+                       class="form-control"
+                       id="username"
+                       required
+                       placeholder="Username"
+                       name="name">
+                <label for="name"
+                       class="form-label">Bulan, Tanggal, Tahun
+                </label>
+            </div>
+            <!--date-->
+        </div>
+        <!--birth-->
+
+        <hr class="border border-3 rounded-pill">
+        <span>Alamat Rumah</span>
+
+        <!--address-->
+        <div class="d-flex my-3 justify-content-evenly">
+            <!--street-->
+            <div class="col-5 form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       required
+                       placeholder="Full Name"
+                       name="name">
+                <label for="name"
+                       class="form-label">Jalan
+                </label>
+            </div>
+            <!--street-->
+
+            <!--residence-->
+            <div class="col-5 form-floating">
+                <input type="text"
+                       class="form-control"
+                       id="username"
+                       required
+                       placeholder="Username"
+                       name="name">
+                <label for="name"
+                       class="form-label">Perumahan
+                </label>
+            </div>
+            <!--residence-->
+        </div>
+
+
+        <div class="d-flex my-3 justify-content-evenly">
+            <!--neighborhood-->
+            <div class="form-floating col-2">
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       required
+                       placeholder="Full Name"
+                       name="name">
+                <label for="name"
+                       class="form-label">RT
+                </label>
+            </div>
+            <!--neighborhood-->
+
+            <!--hamlet-->
+            <div class="form-floating col-2" >
+                <input type="text"
+                       class="form-control"
+                       id="username"
+                       required
+                       placeholder="Username"
+                       name="name">
+                <label for="name"
+                       class="form-label">RW
+                </label>
+            </div>
+            <!--hamlet-->
+
+            <!--urban village-->
+            <div class="form-floating col-6">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Kelurahan</label>
+            </div>
+            <!--urban village-->
+        </div>
+
+        <div class="d-flex my-3 justify-content-evenly">
+            <!--sub district-->
+            <div class="form-floating col-7">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Kecamatan</label>
+            </div>
+            <!--sub district-->
+
+            <!--zip code-->
+            <div class="form-floating col-3">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Kode Pos</label>
+            </div>
+            <!--zip code-->
+        </div>
+
+        <div class="d-flex my-3 justify-content-evenly">
+            <!--province-->
+            <div class="form-floating col-5">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Provinsi</label>
+            </div>
+            <!--province-->
+
+            <!--country-->
+            <div class="form-floating col-5">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <label for="floatingSelect">Negara</label>
+            </div>
+            <!--country-->
+        </div>
+        <!--address-->
+    </form>
+
+</body>
+</html>
