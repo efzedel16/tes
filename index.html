@@ -23,26 +23,28 @@
         </a>
         Input Student Data
     </h1>
+    </h1>
 
-    <form class="col-md-6 m-auto">
+    <form class="col-md-6 m-auto bg-dark">
         <!--name, username-->
-        <div class="d-flex justify-content-evenly">
+        <div class="row justify-content-between">
             <!--name-->
-            <div class="col-6 form-floating">
-                <input class="form-control"
-                       id="name"
-                       name="name"
-                       placeholder="Full Name"
-                       type="text">
-                <label for="name"
-                       class="form-label">Nama Lengkap
-                </label>
+            <div class="col-md-6">
+                <div class=" form-floating">
+                    <input class="form-control"
+                           id="name"
+                           name="name"
+                           placeholder="Full Name"
+                           type="text">
+                    <label for="name"
+                           class="form-label">Nama Lengkap
+                    </label>
+                </div>
             </div>
             <!--name-->
 
             <!--username-->
-            <div class="d-flex">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <div class="col-md-6">
                 <div class="form-floating">
                     <input class="form-control"
                            id="username"
@@ -50,7 +52,7 @@
                            placeholder="@username"
                            type="text">
                     <label for="username"
-                           class="form-label">@username
+                           class="form-label">username
                     </label>
                 </div>
             </div>
@@ -59,9 +61,8 @@
         <!--name, username-->
 
         <!--row-->
-        <div class="d-flex my-3 justify-content-evenly">
             <!--email-->
-            <div class="col-5 form-floating">
+            <div class="col-6 form-floating">
                 <input type="text"
                        class="form-control"
                        id="name"
@@ -75,7 +76,7 @@
             <!--email-->
 
             <!--phone-->
-            <div class="col-5 form-floating">
+            <div class="col-4 form-floating">
                 <input type="text"
                        class="form-control"
                        id="username"
@@ -87,7 +88,6 @@
                 </label>
             </div>
             <!--phone-->
-        </div>
         <!--row-->
 
         <!--gender-->
@@ -286,6 +286,7 @@
             <!--country-->
         </div>
         <!--address-->
+        </div>
     </form>
 
 </body>
