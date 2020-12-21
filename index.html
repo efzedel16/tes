@@ -4,55 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="ie=edge"
+          http-equiv="X-UA-Compatible">
     <title>Input Student Data</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
+    <link crossorigin="anonymous"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-          crossorigin="anonymous">
-    <link rel="stylesheet"
+          rel="stylesheet">
+    <link crossorigin="anonymous"
           href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
           integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-          crossorigin="anonymous">
+          rel="stylesheet">
 </head>
 <body class="container user-select-none">
 
     <h1 class="my-5 text-center">
-        <a class="btn btn-primary" href="index.php">
-            <i class="fas fa-arrow-left"></i>
+        <a class="btn btn-primary"
+           href="index.php">
+            <i class="fa-arrow-left fas"></i>
         </a>
         Input Student Data
     </h1>
-    </h1>
 
-    <form class="col-md-6 m-auto bg-dark">
+    <form class="bg-dark card col-md-6 m-auto p-3">
         <!--name, username-->
-        <div class="row justify-content-between">
+        <div class="justify-content-between row">
             <!--name-->
-            <div class="col-md-6">
-                <div class=" form-floating">
+            <div class="col-md-7 mb-3">
+                <div class="form-floating">
                     <input class="form-control"
                            id="name"
                            name="name"
-                           placeholder="Full Name"
+                           placeholder="name"
                            type="text">
-                    <label for="name"
-                           class="form-label">Nama Lengkap
+                    <label class="form-label"
+                           for="name">Nama Lengkap
                     </label>
                 </div>
             </div>
             <!--name-->
 
             <!--username-->
-            <div class="col-md-6">
+            <div class="col-md-5 mb-3">
                 <div class="form-floating">
                     <input class="form-control"
                            id="username"
                            name="username"
-                           placeholder="@username"
+                           placeholder="username"
                            type="text">
                     <label for="username"
-                           class="form-label">username
+                           class="form-label">@username
                     </label>
                 </div>
             </div>
@@ -60,233 +61,262 @@
         </div>
         <!--name, username-->
 
-        <!--row-->
+        <!--email, phone-->
+        <div class="justify-content-between row">
             <!--email-->
-            <div class="col-6 form-floating">
-                <input type="text"
-                       class="form-control"
-                       id="name"
-                       required
-                       placeholder="Full Name"
-                       name="name">
-                <label for="name"
-                       class="form-label">Email
-                </label>
+            <div class="col-md-7 mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="email"
+                           placeholder="email"
+                           name="email">
+                    <label for="email"
+                           class="form-label">Email
+                    </label>
+                </div>
             </div>
             <!--email-->
 
             <!--phone-->
-            <div class="col-4 form-floating">
-                <input type="text"
-                       class="form-control"
-                       id="username"
-                       required
-                       placeholder="Username"
-                       name="name">
-                <label for="name"
-                       class="form-label">Nomor Telpon
-                </label>
+            <div class="col-md-5 mb-3">
+                <div class="form-floating">
+                    <input type="number"
+                           class="form-control"
+                           id="phone"
+                           placeholder="phone"
+                           name="phone">
+                    <label for="phone"
+                           class="form-label">Nomor Telpon
+                    </label>
+                </div>
             </div>
             <!--phone-->
-        <!--row-->
+        </div>
+        <!--email, phone-->
 
         <!--gender-->
-        <div class="d-flex justify-content-evenly">
+        <div class="d-flex justify-content-around">
             <!--male-->
             <div class="form-check">
-                <i class="fas fa-male"></i>
+                <i class="fa-male fas"></i>
                 <input class="form-check-input"
-                       type="radio"
-                       name="male"
-                       id="male">
+                       id="male"
+                       name="gender"
+                       type="radio">
                 <label class="form-check-label"
-                       for="male">
-                    Laki-Laki
+                       for="male">Male
                 </label>
             </div>
             <!--male-->
 
             <!--female-->
             <div class="form-check">
-                <i class="fas fa-female"></i>
+                <i class="fa-male fas"></i>
                 <input class="form-check-input"
-                       type="radio"
-                       name="female"
-                       id="female">
+                       id="female"
+                       name="gender"
+                       type="radio">
                 <label class="form-check-label"
-                       for="female">
-                    Perempuan
+                       for="female">Female
                 </label>
             </div>
             <!--female-->
         </div>
         <!--gender-->
 
-        <hr class="border border-3 rounded-pill">
-        <span>Ulang Tahun</span>
+        <hr class="border border-3 border-white rounded-pill">
+        <span class="mb-3">Ulang Tahun</span>
 
         <!--birth-->
-        <div class="d-flex my-3 justify-content-evenly">
+        <div class="justify-content-between row">
             <!--place-->
-            <div class="col-5 form-floating">
-                <input type="text"
-                       class="form-control"
-                       id="place"
-                       required
-                       placeholder="Place of Birth"
-                       name="place">
-                <label for="place"
-                       class="form-label">Tempat
-                </label>
+            <div class="col-md-7 mb-3">
+                <div class="form-floating">
+                    <input class="form-control"
+                           id="place"
+                           name="place"
+                           placeholder=place"
+                           type="text">
+                    <label class="form-label"
+                           for="place">Tempat
+                    </label>
+                </div>
             </div>
             <!--place-->
 
-            <!--date-->
-            <div class="col-5 form-floating">
-                <input type="date"
-                       class="form-control"
-                       id="username"
-                       required
-                       placeholder="Username"
-                       name="name">
-                <label for="name"
-                       class="form-label">Bulan, Tanggal, Tahun
-                </label>
+            <!--date, month, year-->
+            <div class="col-md-5 mb-3">
+                <div class="form-floating">
+                    <input class="form-control"
+                           id="birth"
+                           name="birth"
+                           placeholder="birth"
+                           type="date">
+                    <label for="birth"
+                           class="form-label">Bulan, Tanggal, Tahun
+                    </label>
+                </div>
             </div>
-            <!--date-->
+            <!--date, month, year-->
         </div>
         <!--birth-->
 
-        <hr class="border border-3 rounded-pill">
-        <span>Alamat Rumah</span>
+        <hr class="border border-3 border-white rounded-pill">
+        <span class="mb-3">Alamat Tinggal</span>
 
         <!--address-->
-        <div class="d-flex my-3 justify-content-evenly">
+        <!--street, residence-->
+        <div class="justify-content-between row">
             <!--street-->
-            <div class="col-5 form-floating">
-                <input type="text"
-                       class="form-control"
-                       id="name"
-                       required
-                       placeholder="Full Name"
-                       name="name">
-                <label for="name"
-                       class="form-label">Jalan
-                </label>
+            <div class="col-md-5 mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="street"
+                           placeholder="street"
+                           name="street">
+                    <label for="street"
+                           class="form-label">Jalan
+                    </label>
+                </div>
             </div>
             <!--street-->
 
             <!--residence-->
-            <div class="col-5 form-floating">
-                <input type="text"
-                       class="form-control"
-                       id="username"
-                       required
-                       placeholder="Username"
-                       name="name">
-                <label for="name"
-                       class="form-label">Perumahan
-                </label>
+            <div class="col-md-7 mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="residence"
+                           placeholder="residence"
+                           name="residence">
+                    <label for="residence"
+                           class="form-label">Perumahan
+                    </label>
+                </div>
             </div>
             <!--residence-->
         </div>
+        <!--street, residence-->
 
-
-        <div class="d-flex my-3 justify-content-evenly">
+        <!--neighborhood, hamlet, urban village-->
+        <div class="justify-content-between row">
             <!--neighborhood-->
-            <div class="form-floating col-2">
-                <input type="text"
-                       class="form-control"
-                       id="name"
-                       required
-                       placeholder="Full Name"
-                       name="name">
-                <label for="name"
-                       class="form-label">RT
-                </label>
+            <div class="col mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="neighborhood"
+                           placeholder="neighborhood"
+                           name="neighborhood">
+                    <label for="neighborhood"
+                           class="form-label">RT
+                    </label>
+                </div>
             </div>
             <!--neighborhood-->
 
             <!--hamlet-->
-            <div class="form-floating col-2" >
-                <input type="text"
-                       class="form-control"
-                       id="username"
-                       required
-                       placeholder="Username"
-                       name="name">
-                <label for="name"
-                       class="form-label">RW
-                </label>
+            <div class="col mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="hamlet"
+                           placeholder="hamlet"
+                           name="hamlet">
+                    <label for="hamlet"
+                           class="form-label">RW
+                    </label>
+                </div>
             </div>
             <!--hamlet-->
 
             <!--urban village-->
-            <div class="form-floating col-6">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <label for="floatingSelect">Kelurahan</label>
+            <div class="col-md-7 mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="urbanVillage"
+                           placeholder="urbanVillage"
+                           name="urbanVillage">
+                    <label for="urbanVillage"
+                           class="form-label">Kelurahan/Desa
+                    </label>
+                </div>
             </div>
             <!--urban village-->
         </div>
+        <!--neighborhood, hamlet, urban village-->
 
-        <div class="d-flex my-3 justify-content-evenly">
+        <!--sub district, zip code-->
+        <div class="justify-content-between row">
             <!--sub district-->
-            <div class="form-floating col-7">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <label for="floatingSelect">Kecamatan</label>
+            <div class="col-md-7 mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="subDistrict"
+                           placeholder="subDistrict"
+                           name="subDistrict">
+                    <label for="subDistrict"
+                           class="form-label">Kecamatan
+                    </label>
+                </div>
             </div>
             <!--sub district-->
 
             <!--zip code-->
-            <div class="form-floating col-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <label for="floatingSelect">Kode Pos</label>
-            </div>
+                <div class="col-md-5 mb-3">
+                    <div class="form-floating">
+                        <input type="text"
+                               class="form-control"
+                               id="zipCode"
+                               placeholder="zipCode"
+                               name="zipCode">
+                        <label for="zipCode"
+                               class="form-label">Kode Pos
+                        </label>
+                    </div>
+                </div>
             <!--zip code-->
         </div>
+        <!--sub district, zip code-->
 
-        <div class="d-flex my-3 justify-content-evenly">
+        <!--province, country-->
+        <div class="justify-content-between row">
             <!--province-->
-            <div class="form-floating col-5">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <label for="floatingSelect">Provinsi</label>
+            <div class="col-md-6 mb-3">
+                <div class="form-floating">
+                    <input type="text"
+                           class="form-control"
+                           id="province"
+                           placeholder="province"
+                           name="province">
+                    <label for="province"
+                           class="form-label">Provinsi
+                    </label>
+                </div>
             </div>
             <!--province-->
 
             <!--country-->
-            <div class="form-floating col-5">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <label for="floatingSelect">Negara</label>
-            </div>
+                <div class="col-md-6 mb-3">
+                    <div class="form-floating">
+                        <input type="text"
+                               class="form-control"
+                               id="country"
+                               placeholder="country"
+                               name="country">
+                        <label for="country"
+                               class="form-label">Negara
+                        </label>
+                    </div>
+                </div>
             <!--country-->
         </div>
+        <!--province, country-->
         <!--address-->
-        </div>
     </form>
 
 </body>
